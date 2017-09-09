@@ -24,7 +24,7 @@ describe('Listings CRUD tests', function() {
       .end(function(err, res) {
         should.not.exist(err);
         should.exist(res);
-        res.body.should.have.length(147);
+        res.body.should.have.length(146); //There is 146 entries in the database since we deleted an entry in the last assignment.
         done();
       });
   });
